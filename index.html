@@ -1,32 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Juan Valencia</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #F9F8F3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #EF7129;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h1 {
+            color: #812B7D;
+            font-size: 2.5em;
+        }
+
+        main p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #ultimos-proyectos {
+            text-align: center;
+            padding: 40px;
+        }
+
+        #ultimos-proyectos article {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #ultimos-proyectos img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-        <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="estudios.html">Estudios</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
             <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
-   <main> Inicio </main>
-    <p>Bienvenido a mi blog donde te contare un slice de mi life
-        estudios, hobbies y proyectos
-    </p>
-    <button> Leer mas </button>
-    <section>
-        <section id="ultimos-proyectos">
-            <article>
-                <img src= "fff.png" >
-                <h3> Proyectos</h3>
-                <p>Realidad Aumentada ~ 5to semestre</p>
-            </article>
+
+    <main>
+        <h1>Juan Valencia</h1>
+        <p>
+            ¡Hola! Soy <strong>Juan Valencia</strong>, estudiante de <strong>Negocios Digitales</strong> en la Universidad Politécnica Salesiana.
+            Me apasiona la tecnología, el fútbol y los videojuegos desde pequeño. 
+            Me considero una persona tranquila, perseverante y con grandes metas: 
+            crear mis propios proyectos, generar empleo y superarme cada día.
+        </p>
+        <p>
+            En este espacio podrás conocer más sobre mi vida, mis estudios, mis hobbies y los proyectos que he desarrollado. 
+            Es una forma de compartir mi crecimiento y lo que me motiva a seguir aprendiendo.
+        </p>
+
+        <div class="galeria">
+            <img src="img/juanse1.jpeg" alt="Juan Valencia 1">
+            <img src="img/juanse2.jpeg" alt="Juan Valencia 2">
+        </div>
+    </main>
+
+    <section id="ultimos-proyectos">
+        <h2>Últimos proyectos</h2>
+        <article>
+            <img src="img/fff.jpg" alt="Proyecto">
+            <h3>Realidad Aumentada ~ 5to semestre</h3>
+        </article>
     </section>
 </body>
 </html>

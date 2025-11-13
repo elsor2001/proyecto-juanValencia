@@ -1,9 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Juan Valencia</title>
+    <title>Hobbies - Blog Juan Valencia</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 5px 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #EF7129;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #EF7129;
+        }
+
+        section#hobbies article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        section#hobbies img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        section#hobbies ul {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            main {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+                text-align: center;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -15,6 +104,42 @@
             <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
-    <main>Hobbies</main>
+
+    <main>
+        <section id="hobbies">
+            <h1>Mis Hobbies</h1>
+            <p>
+                En mi tiempo libre disfruto realizar actividades que me permiten relajarme y mantenerme activo, 
+                combinando el entretenimiento con el aprendizaje y la salud física.
+            </p>
+
+            <article>
+                <h2>Fútbol</h2>
+                <img src="img/futbol.jpeg" alt="Jugando al fútbol">
+                <p>
+                    El fútbol ha sido mi pasión desde pequeño. Me gusta jugar con amigos, ver partidos y analizar estrategias. 
+                    Además, me inspira la unión y el trabajo en equipo que este deporte promueve.
+                </p>
+            </article>
+
+            <article>
+                <h2>Videojuegos</h2>
+                <img src="img/fifa.jpeg" alt="Juego de FIFA">
+                <p>
+                    También disfruto de los videojuegos, especialmente los relacionados con el fútbol como <strong>FIFA</strong>.
+                    Este hobby no solo es una forma de diversión, sino también una manera de mejorar la concentración 
+                    y la toma de decisiones rápidas.
+                </p>
+            </article>
+
+            <article>
+                <h2>Música y Relajación</h2>
+                <p>
+                    Me gusta escuchar música variada, especialmente cuando necesito concentrarme o relajarme.
+                    La música me motiva y me ayuda a mantener una buena energía durante el día.
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
