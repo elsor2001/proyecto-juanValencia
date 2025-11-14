@@ -4,7 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Blog Juan Valencia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 5px 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #EF7129;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #EF7129;
+        }
+
+        .proyecto {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .proyecto img {
+            width: 100%;
+            max-width: 500px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .proyecto img:hover {
+            transform: scale(1.05);
+        }
+
+        .proyecto p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 1.8em;
+            }
+
+            .proyecto img {
+                max-width: 90%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -19,28 +121,41 @@
 
     <main>
         <h1>Mis Proyectos</h1>
-        <p>Estos son algunos de los proyectos que he desarrollado a lo largo de mi carrera en Negocios Digitales.</p>
+        <p>
+            A lo largo de mi carrera en <strong>Negocios Digitales</strong>, he desarrollado distintos proyectos enfocados en tecnología, sostenibilidad y emprendimiento. 
+            Cada uno representa una etapa importante de mi aprendizaje y crecimiento profesional.
+        </p>
 
         <section class="proyecto">
             <h2>CountMyBottle</h2>
-            <img src="imagenes/countmybottle.jpg" alt="Proyecto CountMyBottle" width="300">
-            <p>CountMyBottle es un sistema digital diseñado para registrar y contabilizar botellas recicladas. 
-            El objetivo es optimizar el tiempo, reducir errores y mejorar el control de reciclaje. 
-            Este proyecto fue desarrollado junto con mis compañeros Diego, Mateo, Kevin y Javier.</p>
-        </section>
-
-        <section class="proyecto">
-            <h2>Mattech</h2>
-            <img src="imagenes/mattech.jpg" alt="Proyecto Mattech" width="300">
-            <p>Mattech es mi página de tecnología donde ofrezco productos innovadores como el dispositivo Alaxe, 
-            un asistente inteligente similar a Alexa. Realizo ventas contraentrega y promoción digital del catálogo tecnológico.</p>
+            <img src="img/count.png" alt="Proyecto CountMyBottle">
+            <p>
+                <strong>CountMyBottle</strong> es un sistema digital diseñado para registrar y contabilizar botellas recicladas. 
+                El objetivo es optimizar el tiempo, reducir errores y mejorar el control del reciclaje dentro de la comunidad. 
+                Este proyecto fue desarrollado junto con mis compañeros <strong>Diego, Mateo, Kevin y Javier</strong>, 
+                integrando tecnología con conciencia ambiental.
+            </p>
         </section>
 
         <section class="proyecto">
             <h2>Luao Eventos</h2>
-            <img src="imagenes/luao.jpg" alt="Proyecto Luao Eventos" width="300">
-            <p>Luao Eventos es una empresa ficticia enfocada en la organización de eventos con discomóvil y gastronomía. 
-            Me encargo de la publicidad y la gestión de ventas para el crecimiento del negocio familiar.</p>
+            <img src="img/luisao.png" alt="Proyecto Luao Eventos">
+            <p>
+                <strong>Luao Eventos</strong> es una empresa ficticia enfocada en la organización de eventos con discomóvil y gastronomía. 
+                En este proyecto me encargo de la publicidad digital y la gestión de ventas para fortalecer el crecimiento del negocio familiar, 
+                creando experiencias únicas en cada celebración.
+            </p>
+        </section>
+
+        <section class="proyecto">
+            <h2>Mattech</h2>
+            <img src="img/mattech.jpg" alt="Proyecto Mattech">
+            <p>
+                <strong>Mattech</strong> es mi página de tecnología donde ofrezco productos innovadores como el dispositivo <strong>Alaxe</strong>, 
+                un asistente inteligente similar a Alexa.  
+                Realizo ventas contraentrega, publicidad en redes sociales y promoción digital del catálogo tecnológico, 
+                fomentando el emprendimiento en el ámbito digital.
+            </p>
         </section>
     </main>
 </body>

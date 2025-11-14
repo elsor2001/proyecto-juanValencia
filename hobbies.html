@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies - Blog Juan Valencia</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
     <style>
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -62,12 +63,16 @@
             padding-bottom: 15px;
         }
 
+        /* 🔸 Imágenes del mismo tamaño y responsive */
         section#hobbies img {
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
+            height: 280px;
+            object-fit: cover;
             border-radius: 10px;
             display: block;
             margin: 15px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         section#hobbies ul {
@@ -88,8 +93,9 @@
                 font-size: 1.6em;
                 text-align: center;
             }
-            img {
-                max-width: 100%;
+            section#hobbies img {
+                max-width: 90%;
+                height: auto;
             }
         }
     </style>
@@ -115,7 +121,7 @@
 
             <article>
                 <h2>Fútbol</h2>
-                <img src="img/futbol.jpeg" alt="Jugando al fútbol">
+                <img src="img/liga.jpeg" alt="Jugando al fútbol">
                 <p>
                     El fútbol ha sido mi pasión desde pequeño. Me gusta jugar con amigos, ver partidos y analizar estrategias. 
                     Además, me inspira la unión y el trabajo en equipo que este deporte promueve.
@@ -134,9 +140,12 @@
 
             <article>
                 <h2>Música y Relajación</h2>
+                <img src="img/Bad.jpeg" alt="Bad Bunny - Artista Favorito">
                 <p>
-                    Me gusta escuchar música variada, especialmente cuando necesito concentrarme o relajarme.
-                    La música me motiva y me ayuda a mantener una buena energía durante el día.
+                    La música forma una parte importante de mi día a día. Me acompaña cuando estudio, trabajo o simplemente quiero relajarme.  
+                    Mi artista favorito es <strong>Bad Bunny</strong>, no solo por su estilo único y versátil, sino porque transmite emociones reales 
+                    en cada canción. Me identifico con su forma de romper barreras, innovar y mantenerse auténtico sin importar las críticas.  
+                    Sus letras me motivan a seguir mis metas con determinación y confianza.
                 </p>
             </article>
         </section>

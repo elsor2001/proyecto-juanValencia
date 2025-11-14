@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Juan Valencia</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
     <style>
         body {
             font-family: "Segoe UI", Arial, sans-serif;
@@ -21,13 +22,14 @@
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             list-style: none;
             margin: 0;
             padding: 0;
         }
 
         nav li {
-            margin: 0 15px;
+            margin: 10px 15px;
         }
 
         nav a {
@@ -67,21 +69,75 @@
             object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
         }
 
-        #ultimos-proyectos {
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        #mis-viajes {
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
         }
 
-        #ultimos-proyectos article {
-            display: inline-block;
-            margin-top: 20px;
+        #mis-viajes h2 {
+            color: #812B7D;
+            margin-bottom: 20px;
         }
 
-        #ultimos-proyectos img {
-            width: 150px;
-            height: auto;
+        .viajes-contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .viaje {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            max-width: 350px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .viaje:hover {
+            transform: translateY(-5px);
+        }
+
+        .viaje img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .viaje h3 {
+            color: #EF7129;
+            margin-bottom: 10px;
+        }
+
+        .viaje p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            main h1 {
+                font-size: 2em;
+            }
+
+            .galeria img {
+                width: 90%;
+                height: auto;
+            }
+
+            .viaje {
+                max-width: 90%;
+            }
         }
     </style>
 </head>
@@ -115,12 +171,27 @@
         </div>
     </main>
 
-    <section id="ultimos-proyectos">
-        <h2>Últimos proyectos</h2>
-        <article>
-            <img src="img/fff.jpg" alt="Proyecto">
-            <h3>Realidad Aumentada ~ 5to semestre</h3>
-        </article>
+    <section id="mis-viajes">
+        <h2>Mis viajes</h2>
+        <div class="viajes-contenedor">
+            <div class="viaje">
+                <img src="img/cuenca.jpeg" alt="Viaje a Cuenca">
+                <h3>Viaje a Cuenca</h3>
+                <p>
+                    Un hermoso recorrido por la ciudad de Cuenca, llena de historia, arquitectura colonial y tradiciones. 
+                    Un lugar donde la cultura ecuatoriana se vive en cada rincón.
+                </p>
+            </div>
+
+            <div class="viaje">
+                <img src="img/playa.jpeg" alt="Viaje a la Playa">
+                <h3>Viaje a la Playa</h3>
+                <p>
+                    Disfrutando del mar, el sol y la arena. Un viaje lleno de tranquilidad y paisajes inolvidables, 
+                    donde la brisa marina renueva energías y deja recuerdos únicos.
+                </p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
